@@ -1,6 +1,10 @@
 define(['backbone'], function(Backbone) {
 	'use strict';
 
+	var Backbone = require('backbone');
+	var L = require('leaflet');
+	var _ = require('underscore');
+
 	return Backbone.Model.extend({
 		initialize: function(options) {
 			var appModel = this.appModel = options.app;

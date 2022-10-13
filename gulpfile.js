@@ -99,5 +99,6 @@ gulp.task('resources', function() {
 gulp.task('init', ['public', 'assets', 'update']);
 gulp.task('build', [/*'lint',*/ 'compile']);
 gulp.task('update', ['data', 'tiles', 'resources']);
+gulp.task('setup', ['init', 'build']);
 //gulp.task('optimize', ['uglify', 'concat']);
 //gulp.task('production', ['build', 'optimize', 'deploy']);
